@@ -19,8 +19,7 @@ var shift = 10;
 var baseColor = 252;
 
 
-function setup()
-{
+function setup() {
   //putting this canvas in a variable
   var myCanvas=createCanvas(800, 250);
   myCanvas.parent('mySketch')

@@ -34,8 +34,8 @@ function draw()
   var ratio = shift / ptrDist;
   rEyeXCur = ratio * (mouseX - rEyeX) + rEyeX;
   rEyeYCur = ratio * (mouseY - rEyeY) + rEyeY;
-  ptrDist = dist(lEyeXCur,lEyeYCur, mouseX, mouseY);
-  ratio = shift / ptrDist;
+  var ptrDist = dist(lEyeX,lEyeY, mouseX, mouseY);
+  var ratio = shift / ptrDist;
   lEyeXCur = ratio* (mouseX - lEyeX) + lEyeX;
   lEyeYCur = ratio* (mouseY - lEyeY) + lEyeY;
 //draws out the face with eyes

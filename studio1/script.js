@@ -24,7 +24,6 @@ function setup() {
   var myCanvas=createCanvas(800, 250);
   myCanvas.parent('mySketch')
   background(252);
-  rectMode(CENTER);
 }
 
 

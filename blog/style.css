@@ -8,6 +8,7 @@
 }
 
 body {
+	width: 1200px;
 	margin-left: 100px;
 	background-color: #FCFCFC;
 	font-family: helvetica;
@@ -18,14 +19,14 @@ header {
 
 h1 {
 	color: #2F2F2F;
-	margin: 100px 0px 70px 20px;
+	margin: 100px 0px 50px 20px;
 	font-family: helvetica;
 	font-size: 50px;
 }
 
 h2 {
 	color: white;
-	margin-left: 20px;
+	margin: 20px 0px 0px 20px;
 	font-size: 20px;
 }
 
@@ -35,8 +36,8 @@ h3 {
 }
 
 div {
-	width: 600px;
-	height: 300px;
+	width: 500px;
+	height: 370px;
 	margin: 20px;
 	padding: 10px;
 	float: left;
@@ -49,7 +50,7 @@ img {
 }
 
 p {
-	margin: 20px 30px 0px 20px;
+	margin: 15px 20px 0px 20px;
 	line-height: 18px;
 	font-size: 12px;
 }
@@ -57,6 +58,7 @@ p {
 footer {
 	clear: left;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 a:link {

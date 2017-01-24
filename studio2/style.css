@@ -1,17 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
-/* blog css */
-
-* {
-	margin: 0;
-	padding: 0;
-}
+/* studio 2 css */
 
 body {
-	width: 1200px;
 	margin-left: 100px;
 	background-color: #FCFCFC;
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;;
 }
 
 header {
@@ -19,14 +13,14 @@ header {
 
 h1 {
 	color: #2F2F2F;
-	margin: 100px 0px 50px 20px;
-	font-family: helvetica;
+	margin: 50px 0px 70px 20px;
+	font-family: helvetica, sans-serif;;
 	font-size: 50px;
 }
 
 h2 {
 	color: white;
-	margin: 20px 0px 0px 20px;
+	margin-left: 20px;
 	font-size: 20px;
 }
 
@@ -34,33 +28,29 @@ h3 {
 	margin-left: 20px;
 	font-size: 12px;
 }
-article {
-	float: left;
+
+section {
+	font-family: helvetica, sans-serif;;
+	font-size: 12px;
+	line-height: 20px;
 }
+
 div {
-	width: 500px;
-	height: 370px;
-	margin: 20px;
+	width: 230px;
+	height: 230px;
+	margin: 20px 10px 50px 10px;
 	padding: 10px;
 	float: left;
 	background-color: #D2F898;
-	color: #2F2F2F;
+	color: white;
 }
 
-img {
-	margin: 20px 0px 0px 20px;
-}
-
-p {
-	margin: 15px 20px 0px 20px;
-	line-height: 18px;
-	font-size: 12px;
+nav {
 }
 
 footer {
 	clear: left;
 	padding-top: 30px;
-	padding-bottom: 30px;
 }
 
 a:link {

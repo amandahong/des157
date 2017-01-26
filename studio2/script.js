@@ -1,38 +1,50 @@
-// p5 file
-// studio 2 JS
-// open the console window of any browser to see console.log() messages,
-// like print() messages in Processing
-console.log("hi");
+// JavaScript Document
+console.log('reading');
 
-//capture the submit event
-  document.f.onsubmit = processForm;
-
-  //define process function
-  function processForm() {
-
-    //store names in variables
-    var userName = document.f.userName.value;
-
-    var userColor = document.f.userColor.value;
-
-    var myMsg = document.getElementById('myMsg');
-
-    //print out into message
-    myMsg.innerHTML= ('Hi ' + userName + ' I also like ' + userColor);
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
 
 
+    //capture the submit event
+    document.f.onsubmit = processForm;
+    document.f.onreset = clearForm;
 
-     //prevent page from reloading
-    return false;
+    //define process function
+    function processForm() {
+
+        //store names in variables
+        var userName = document.f.userName.value;
+
+        var userColor = document.f.userColor.value;
+
+        var myMsg = document.getElementById('myMsg');
 
 
-  }
+        /*
+            //print out into message
+            myMsg.innerHTML = 'Hi ' + userName + ' I also like ' + userColor;
+            myMsg.className = "show";
+        */
 
 
-/*
-  document.forms[0].addEventListener('reset', function() {
-      document.getElementById('myMsg').innerHTML = '';
-  });
+        if (userName = "" || userColor = "") {
+            alert('please fill out!');
+        } else {
+            myMsg.className = "show";
+            myMsg.innerHTML = 'Hi ' + userName + ' I also like ' + userColor;
+
+        }
+
+        //prevent page from reloading
+        return false;
+
+    }
+
+    //clear form
+    function clearForm() {
+        myMsg.className = "hide";
+    }
 
 
-*/
+
+});

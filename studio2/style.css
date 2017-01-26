@@ -2,34 +2,36 @@
 
 /* CSS Document */
 
+/* start all css with a reset */
 
-/* studio 2 css */
-
-body {
-  margin-left: 100px;
-  background-color: #FCFCFC;
-  font-family: helvetica, sans-serif;
-  ;
+* {
+    margin: 0px;
+    padding: 0px
 }
 
-header {}
+body {
+  margin: 100px 0px 0px 150px;
+  font-family: helvetica, sans-serif;
+}
+
+.hide {
+  display:none;
+}
+
+.show {
+  display:block;
+}
 
 h1 {
-  color: #2F2F2F;
-  margin: 50px 0px 70px 20px;
   font-family: helvetica, sans-serif;
-  ;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h2 {
-  color: white;
-  margin-left: 20px;
   font-size: 20px;
 }
 
 h3 {
-  margin-left: 20px;
   font-size: 12px;
 }
 
@@ -38,28 +40,16 @@ footer {
   padding-top: 30px;
 }
 
+
 a:link {
   text-decoration: none;
-  color: black;
 }
 
 a:visited {
-  color: #2F2F2F;
 }
 
 a:hover {
-  color: white;
 }
 
 a:active {
-  color: black;
 }
-
-
-/*
-#2F2F2F grey
-#D2F898 green
-#FCFCFC white
-*/
-
-898 green #FCFCFC white */

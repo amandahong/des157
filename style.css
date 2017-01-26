@@ -47,7 +47,7 @@ h3 {
   font-size: 12px;
 }
 
-div {
+div.left {
   width: 230px;
   height: 230px;
   margin: 20px 10px 30px 10px;
@@ -90,12 +90,3 @@ a:hover {
 a:active {
   color: black;
 }
-
-
-/*
-#2F2F2F grey
-#D2F898 green
-#FCFCFC white
-
-#1782AD blue alt
-*/

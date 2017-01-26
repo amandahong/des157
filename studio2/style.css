@@ -10,7 +10,8 @@
 }
 
 body {
-  margin: 100px 0px 0px 150px;
+  margin: auto;
+  text-align: center;
   font-family: helvetica, sans-serif;
 }
 
@@ -20,6 +21,12 @@ body {
 
 .show {
   display:block;
+}
+
+article {
+  margin: auto;
+  width: 300px;
+  text-align: left;
 }
 
 h1 {
@@ -35,9 +42,7 @@ h3 {
   font-size: 12px;
 }
 
-article {
-  width: 500px;
-}
+
 
 footer {
   clear: left;

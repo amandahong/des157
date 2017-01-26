@@ -5,18 +5,17 @@
 console.log("hi");
 
 //two pupils
-var rEyeX = 220;
+var rEyeX = 320;
 var rEyeY = 200;
 var rEyeXCur = rEyeX;
 var rEyeYCur = rEyeY;
 
-var lEyeX = 380;
+var lEyeX = 480;
 var lEyeY = 200;
 var lEyeXCur = lEyeX;
 var lEyeYCur = lEyeY;
 
 var shift = 10;
-var baseColor = 252;
 
 
 function setup() {
@@ -39,21 +38,20 @@ function draw()
   lEyeXCur = ratio* (mouseX - lEyeX) + lEyeX;
   lEyeYCur = ratio* (mouseY - lEyeY) + lEyeY;
 //draws out the face with eyes
-  ellipse(300,250, 400, 400);
-  fill(255);
-  ellipse(220,200, 80, 50);
-  ellipse(380,200, 80, 50);
-  fill(0);
+  ellipse(400, 250, 350, 350);
+  fill(252);
+  ellipse(320,200, 80, 50);
+  ellipse(480,200, 80, 50);
+  fill(50);
 //draws out pupils
   ellipse(rEyeXCur,rEyeYCur, 30, 30);
   ellipse(lEyeXCur,lEyeYCur, 30, 30);
-//draws a line
-  line(pmouseX, pmouseY, mouseX, mouseY);
-}
+//draws a line on mouse click
+  if(mouseIsPressed){
+    line(pmouseX,pmouseY,mouseX,mouseY)
+    }
 
-/*
-function mouseIsPressed()
-{
-
+  if (mouseButton == RIGHT){
+     background(255);
+  }
 }
-*/

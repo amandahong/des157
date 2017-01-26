@@ -1,84 +1,93 @@
 @charset "UTF-8";
+
 /* CSS Document */
+
+
 /* blog css */
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-	width: 1200px;
-	margin-left: 100px;
-	background-color: #FCFCFC;
-	font-family: helvetica;
-}
-
-header {
+    background-color: #FCFCFC;
+    margin: auto;
+    width: 1200px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-	color: #2F2F2F;
-	margin: 100px 0px 50px 20px;
-	font-family: helvetica;
-	font-size: 50px;
+    color: #2F2F2F;
+    margin: 100px 0px 50px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
 }
 
 h2 {
-	color: white;
-	margin: 20px 0px 0px 20px;
-	font-size: 20px;
+    color: white;
+    margin: 20px 0px 0px 20px;
+    font-size: 20px;
 }
 
 h3 {
-	margin-left: 20px;
-	font-size: 12px;
+    margin-left: 20px;
+    font-size: 12px;
 }
+
 article {
-	float: left;
+    float: left;
 }
+
 div {
-	width: 500px;
-	height: 370px;
-	margin: 20px;
-	padding: 10px;
-	float: left;
-	background-color: #D2F898;
-	color: #2F2F2F;
+    width: 500px;
+    height: 370px;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    background-color: #D2F898;
+    color: #2F2F2F;
 }
 
 img {
-	margin: 20px 0px 0px 20px;
+    margin: 20px 0px 0px 20px;
 }
 
 p {
-	margin: 15px 20px 0px 20px;
-	line-height: 18px;
-	font-size: 12px;
+    margin: 15px 20px 0px 20px;
+    line-height: 18px;
+    font-size: 12px;
 }
 
 footer {
-	clear: left;
-	padding-top: 30px;
-	padding-bottom: 30px;
+    clear: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 a:link {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 a:visited {
-	color: #2F2F2F;
+    color: #2F2F2F;
 }
 
 a:hover {
-	color: white;
+    color: #f1f1f2;
 }
 
 a:active {
-	color: black;
+    color: black;
 }
+
 
 /*
 #2F2F2F grey

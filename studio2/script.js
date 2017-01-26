@@ -10,28 +10,29 @@ console.log("hi");
   //define process function
   function processForm() {
 
-    //store user name in a variable
+    //store names in variables
     var userName = document.f.userName.value;
-   // alert('Hi ' + userName);
-
-    //store userColor in a variable called userColor
 
     var userColor = document.f.userColor.value;
 
     var myMsg = document.getElementById('myMsg');
 
+    //print out into message
     myMsg.innerHTML= ('Hi ' + userName + ' I also like ' + userColor);
-    //comment out the alert message above
 
-    //call a new alert() to concatenate a message with userName and userColor
+
 
      //prevent page from reloading
     return false;
 
-  }
-/*
-function mouseIsPressed()
-{
 
-}
+  }
+
+
+/*
+  document.forms[0].addEventListener('reset', function() {
+      document.getElementById('myMsg').innerHTML = '';
+  });
+
+
 */

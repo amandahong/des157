@@ -35,6 +35,10 @@ h3 {
   font-size: 12px;
 }
 
+article {
+  width: 500px;
+}
+
 footer {
   clear: left;
   padding-top: 30px;

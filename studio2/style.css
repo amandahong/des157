@@ -90,7 +90,8 @@ p {
 
 footer {
     clear: left;
-    padding-top: 30px;
+    background-color: black;
+    padding-top: 10px;
 }
 
 a:link {

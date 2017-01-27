@@ -14,6 +14,8 @@ body {
     margin: auto;
     text-align: center;
     font-family: helvetica, sans-serif;
+    background-image: url("images/rc_head.png");
+    background-repeat: repeat;
 }
 
 .hide {
@@ -24,11 +26,23 @@ body {
     display: block;
 }
 
-
-
 h1 {
-    font-family: helvetica, sans-serif;
-    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    color: white;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+h3 {
+    font-size: 12px;
+    margin: 20px 0px 20px 0px;
+    color: white;
 }
 
 article {
@@ -44,30 +58,29 @@ input[type="text"] {
     padding: 10px;
     border-color: white;
     border-radius: 5px;
-    background-color: grey;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 20px;
 }
 
 div {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 label {
-    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: white;
 }
 
 p {
-  position: relative;
-  float: left;
-  text-align: left;
-  width: 300px;
-  margin: 40px 0px 0px 100px;
-}
-
-h3 {
-    font-size: 12px;
-    margin: 20px 0px 20px 0px;
+    position: relative;
+    float: left;
+    text-align: left;
+    width: 300px;
+    margin: 40px 0px 0px 100px;
+    background-color: black;
+    color: white;
 }
 
 footer {
@@ -77,10 +90,17 @@ footer {
 
 a:link {
     text-decoration: none;
+    color: white;
 }
 
-a:visited {}
+a:visited {
+    color: white;
+}
 
-a:hover {}
+a:hover {
+    color: grey;
+}
 
-a:active {}
+a:active {
+    color: white;
+}

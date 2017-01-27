@@ -18,6 +18,11 @@ body {
     background-repeat: repeat;
 }
 
+header {
+  position: relative;
+  float: left;
+}
+
 .hide {
     display: none;
 }
@@ -48,7 +53,7 @@ h3 {
 article {
     position: relative;
     float: left;
-    margin-left: 20%;
+    margin-left: 20px;
     width: 300px;
     text-align: left;
 }
@@ -69,7 +74,7 @@ div {
 
 label {
     font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 
@@ -78,7 +83,7 @@ p {
     float: left;
     text-align: left;
     width: 300px;
-    margin: 40px 0px 0px 100px;
+    margin: 50px 0px 0px 50px;
     background-color: black;
     color: white;
 }

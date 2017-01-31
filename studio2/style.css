@@ -53,9 +53,10 @@ h3 {
 article {
     position: relative;
     float: left;
-    margin-left: 20px;
+    margin: 0px 0px 50px 20px;
     width: 300px;
     text-align: left;
+
 }
 
 input[type="text"] {
@@ -91,7 +92,7 @@ p {
 footer {
     clear: left;
     background-color: black;
-    padding-top: 10px;
+    padding: 10px 0px 10px 0px;
 }
 
 a:link {

@@ -2,7 +2,6 @@
 
 /* CSS Document */
 
-
 /* start all css with a reset */
 
 * {
@@ -10,22 +9,98 @@
     padding: 0px
 }
 
-button, aside {
-    font-size: 40px;
+body {
+    position: relative;
+    width: 1300px;
+    margin: auto;
+    background-color: #EAE9DE;
 }
 
-button {}
+/* bag and welcome message */
+
+#bagLocation {
+    position: absolute;
+}
+
+#bagInfo {
+    position: absolute;
+    text-align: center;
+    top: 320px;
+    left: 450px;
+    display: none;
+    opacity: .85;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+  color: #412234;
+}
+
+
+/* 5 buttons */
+article {
+    position: absolute;
+    margin-top: 35%;
+    padding-bottom: 70px;
+}
+
+button, aside {
+    font-size: 30px;
+}
+
+button {
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 1px;
+}
 
 div {
-  float: left;
+    float: left;
 }
+
+#pen {
+    background-color: #2E4052;
+    height: 505px;
+}
+
+#book {
+    background-color: #82A3A1;
+    height: 505px;
+}
+
+#charger {
+    background-color: #FFC857;
+    height: 505px;
+}
+
+#tea {
+    background-color: #FFFFFF;
+    height: 505px;
+}
+
+#earphone {
+    background-color: #412234;
+    height: 505px;
+}
+
+img {
+    opacity: 0.25;
+}
+
+img:hover {
+    opacity: 1.0;
+    transition: all 0.7s ease 0s;
+}
+
+/* info box + close button */
 
 @keyframes fade {
     from {
         background-color: transparent;
     }
     to {
-        background-color: black;
+        background-color: white;
     }
 }
 
@@ -33,41 +108,30 @@ aside {
     animation-name: fade;
     animation-duration: 2s;
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 10%;
+    left: 23%;
     width: 700px;
-    height: 400px;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
+    height: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2E4052;
     display: none;
     opacity: .85;
+    box-shadow: 0px 0px 60px #2E4052;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 aside p {
     position: relative;
-    top: 20%;
-    text-align: center;
+    margin-top: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 aside #close {
     position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-#pen {
-    background-color: blue;
-}
-
-#book {
-    background-color: red;
-}
-
-img {
-    opacity: 0.5;
-}
-
-img:hover {
-    opacity: 1.0;
 }

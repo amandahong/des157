@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var earphone = document.getElementById('earphone');
 
     var close = document.getElementsByClassName('close');
+    var closeAll = document.getElementById('closeAll');
 
     var items = [bag, pen, book, charger, tea, earphone];
 
@@ -32,5 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             //parent element is the aside box because close is nested within the aside
         })
     }
+
+
 
 });

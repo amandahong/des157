@@ -143,5 +143,6 @@ aside #close {
 
 footer {
   position: absolute;
-  float: right;
+      font-family: 'Open Sans Condensed', sans-serif;
+  top: 1000px;
 }

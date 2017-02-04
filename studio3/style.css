@@ -129,14 +129,19 @@ aside {
 
 h2 {
     font-size: 40px;
+    margin-top: 50px;
 }
 
 aside p {
     position: relative;
-    margin-top: 60px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 aside #close {
     position: absolute;
+}
+
+footer {
+  position: absolute;
+  float: right;
 }

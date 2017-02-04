@@ -43,7 +43,7 @@ h1 {
 
 /* 5 buttons */
 
-article {
+#buttons {
     position: absolute;
     margin-top: 35%;
     padding-bottom: 70px;
@@ -145,5 +145,23 @@ aside #close {
 footer {
     position: absolute;
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
     top: 1000px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #2E4052;
+}
+
+a:visited {
+  color: #2E4052;
+}
+
+a:hover {
+  color: #FFC857;
+}
+
+a:active {
+  color: white;
 }

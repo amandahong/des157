@@ -33,10 +33,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             //parent element is the aside box because close is nested within the aside
         })
     }
-    
-    $(function() {
-        $( "#draggable" ).draggable();
-      });
 
 
 });

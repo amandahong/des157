@@ -1,0 +1,57 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ch 14: Mouse Trail</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #E8E5E6;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #3B3355;
+            text-align: center;
+        }
+
+        .trail { /* className for the trail elements */
+            background: #BFCDE0;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 14: Mouse Trail</h1>
+    <script>
+        var circles = []; // start array for circles
+        for (var i = 0; i < 10; i++) { // creat loop and push into array
+            var elem = document.createElement("div");
+            elem.className = "trail";
+            document.body.appendChild(elem);
+            circles.push(elem); // push to array
+        }
+        var currentCircle = 0;
+
+        addEventListener("mousemove", function(event) {
+            var circle = circles[currentCircle]; // set current circles
+            circle.style.left = (event.pageX - 5) + "px"; // set location of X
+            circle.style.top = (event.pageY - 5) + "px"; // set location of Y
+            currentCircle = (currentCircle + 1) % circles.length; // set how long the trail is
+        });
+    </script>
+</body>

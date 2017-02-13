@@ -49,7 +49,9 @@
             var circle = circles[currentCircle]; // set current circles
             circle.style.left = (event.pageX - 5) + "px"; // set location of X
             circle.style.top = (event.pageY - 5) + "px"; // set location of Y
+            console.log(circles.length);
             currentCircle = (currentCircle + 1) % circles.length; // set how long the trail is
+            console.log(currentCircle);
         });
     </script>
 </body>

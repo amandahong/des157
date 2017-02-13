@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    position: relative;
+    width: 1400px;
+    margin: auto;
+    background-color: #EAE9DE;
+    font-family: 'Playfair Display', serif;
+}
+
+.tip {
+    width: 220px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+    opacity: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #396443;
+  font-size: 60px;
+  text-align: center;
+  margin: 50px 0px 20px 0px;
+}
+
+/* plants */
+
+#plants {
+    margin: 80px 0px 20px 80px;
+}
+
+img {
+  opacity: 0.6;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+#butterfly {
+    margin-left: 500px;
+    margin-top: 200px;
+    -webkit-animation: spin 10s infinite linear;
+    opacity: 1.0;
+
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/*timeline*/
+ol {
+	position: relative;
+	display: block;
+	margin: 80px;
+	height: 4px;
+	background: #8FAD6F;
+}
+
+/*timeline elements*/
+
+/*text styling*/
+li {
+	position: relative;
+	top: -8px;
+  margin-left: 20px;
+	display: inline-block;
+	width: 280px;
+}
+
+p {
+  margin: 15px 0px 0px 30px;
+  color: #396443;
+}
+
+/*circles*/
+li::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 4px solid #ADB7A6;
+	border-radius: 10px;
+	background: #eee;
+}
+
+/*details*/
+/*bubbles that appear*/
+.details {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	padding: 15px;
+	border-radius: 10px;
+	border-right: 2px solid rgba(0,0,0,.1);
+	border-bottom: 2px solid rgba(0,0,0,.1);
+	background: #fff;
+}
+
+/*triangle*/
+.details::before {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: -10px;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+	border-top: 0;
+}
+
+/* on hover */
+li:hover {
+	cursor: pointer;
+  color: #8FAD6F;
+}
+li:hover::before {
+	border-width: 5px;
+	border-color: #8FAD6F;
+}
+li:hover .details {
+	display: block;
+  color: #EAAC68;
+}
+
+footer {
+    padding: 70px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    top: 800px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #8FAD6F;
+}
+
+a:visited {
+    color: #82A3A1;
+}
+
+a:hover {
+    color: #396443;
+}
+
+a:active {
+    color: white;
+}

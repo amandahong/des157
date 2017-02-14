@@ -76,11 +76,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     function animate(time) {
         if (lastTime != null)
-            angle += (time - lastTime) * 0.001;
+            angle += (time - lastTime) * 0.0005;
         lastTime = time;
 
-        butterfly.style.left = (Math.cos(angle) * 100) + "px";
-        butterfly.style.top = (Math.sin(-angle) * 100) + "px";
+        butterfly.style.left = (Math.cos(angle) * 500) + "px";
+        butterfly.style.top = (Math.sin(-angle) * 200) + "px";
         requestAnimationFrame(animate);
     }
     requestAnimationFrame(animate);

@@ -3,19 +3,18 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
-    /*
-        var nood = Snap.select("#noodle"),
-            bowl = nood.select("#bowl"),
-            noods = nood.select("#noods"),
-            meat = nood.select("#meat"),
-            leaves = nood.select("#leaves"),
+    var nood = document.getElementById('noodle');
+    var bowl = document.getElementById('bowl');
+    var noods = document.getElementById('noods');
+    var meat = document.getElementById('meat');
+    var leaves = document.getElementById('leaves');
 
-            timer;
-    */
+    steam.addEventListener('click', function() {
+        steamAnimate.play();
+        console.log('click')
+    });
 
-    var angle = 0;
-
-    var steam = anime({
+    var steamAnimate = anime({
         targets: '#steam',
         translateY: 20,
         duration: 1000,
@@ -24,9 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         direction: 'alternate',
     });
 
-console.log(`anime.easings`);
-
-    var noods = anime({
+    var noodsAnimate = anime({
         targets: '#noods',
         translateX: 20,
         duration: 2000,
@@ -35,7 +32,22 @@ console.log(`anime.easings`);
         direction: 'alternate',
     });
 
+    var meatAnimate = anime({
+        targets: '#meat',
+        translateX: 10,
+        duration: 2000,
+        loop: true,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+    });
 
-
+    var leavesAnimate = anime({
+        targets: '#leaves',
+        translateX: 10,
+        duration: 1000,
+        loop: true,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+    });
 
 });

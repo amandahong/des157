@@ -2,6 +2,7 @@
 
 /* CSS Document */
 
+
 /* start all css with a reset */
 
 * {
@@ -15,33 +16,37 @@ body {
     margin: auto;
     background-color: #F7F7F7;
 }
+
 header {
-  position: absolute;
-  margin-top: 400px;
+    position: absolute;
+    margin-top: 400px;
 }
 
 h1 {
-  font-family: arial;
-  font-style: italic;
-  text-align: right;
-  color: #E55812;
-  font-size: 40px;
+    font-family: arial;
+    text-align: right;
+    color: #E55812;
+    font-size: 40px;
 }
 
+main {
+  margin-top: -50px;
+}
 
 footer {
+    position: absolute;
+    margin-top: -100px;
     padding-bottom: 70px;
     font-size: 16px;
-    top: 800px;
 }
 
 a:link {
     text-decoration: none;
-    color: #8FAD6F;
+    color: #F26522;
 }
 
 a:visited {
-    color: #82A3A1;
+    color: #F26522;
 }
 
 a:hover {

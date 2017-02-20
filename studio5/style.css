@@ -23,17 +23,18 @@ header {
 }
 
 h1 {
-    font-family: arial;
+    font-family: "Helvetica", Arial, sans-serif;
     text-align: right;
     color: #E55812;
     font-size: 40px;
 }
 
 main {
-  margin-top: -50px;
+    margin-top: -80px;
 }
 
 footer {
+    font-family: "Helvetica", Arial, sans-serif;
     position: absolute;
     margin-top: -100px;
     padding-bottom: 70px;

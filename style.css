@@ -6,87 +6,95 @@
 /* index css */
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin: auto;
-  width: 1000px;
-  background-color: #FCFCFC;
-  font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 800px;
+    background-color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin: 0px 20px 0px 20px;
 }
 
 section {
-  margin: auto;
-  font-size: 12px;
-  line-height: 20px;
-  font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  color: #2F2F2F;
-  margin: 100px 0px 50px 10px;
-  font-size: 40px;
-  font-family: 'Roboto', sans-serif;
+    color: #3D3D3D;
+    margin: 30px 0px 20px 0px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-  color: white;
-  margin: 20px 0px 0px 20px;
-  font-size: 20px;
+    color: #FFD23F;
+    font-size: 20px;
+}
+
+h2#click {
+    float: right;
+    color: #D6D6D6;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: -65px;
+    text-align: right;
 }
 
 h3 {
-  margin-left: 20px;
-  font-size: 12px;
+    font-size: 12px;
+    margin: 20px 0px 0px 0px;
 }
 
 div.left {
-  width: 230px;
-  height: 230px;
-  margin: 20px 10px 30px 10px;
-  padding: 10px;
-  float: left;
-  background-color: #D2F898;
-  color: white;
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    float: left;
+    color: #FFD23F;
 }
 
 nav {
-  margin: 10px 0px 0px 35px;
+    margin: 10px 0px 0px 20px;
 }
 
 p {
-  margin: 15px 20px 0px 20px;
-  line-height: 18px;
-  font-size: 12px;
-  color: black;
+    margin: 15px 20px 0px 20px;
+    line-height: 18px;
+    font-size: 12px;
+    color: black;
 }
 
 footer {
-  clear: left;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    clear: left;
+    margin: 0px 20px 0px 20px;
 }
 
 a:link {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 a:visited {
-  color: #2F2F2F;
+    color: #2F2F2F;
 }
 
 a:hover {
-  color: #f1f1f2;
+    color: #FFD23F;
 }
 
 a:active {
-  color: black;
+    color: black;
 }

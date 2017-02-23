@@ -19,15 +19,16 @@ var shift = 10;
 
 
 function setup() {
-  //putting this canvas in a variable
-  var myCanvas=createCanvas(800, 250);
-  myCanvas.parent('mySketch')
-  background(252);
+    //putting this canvas in a variable
+    var myCanvas = createCanvas(800, 250);
+    myCanvas.parent('mySketch')
+    background(252);
 }
 
 
-function draw()
-{
+function draw() {
+
+    /*
 //adds location interaction for pupils with mouse location
   var ptrDist = dist(rEyeX,rEyeY, mouseX, mouseY);
   var ratio = shift / ptrDist;
@@ -46,12 +47,13 @@ function draw()
 //draws out pupils
   ellipse(rEyeXCur,rEyeYCur, 30, 30);
   ellipse(lEyeXCur,lEyeYCur, 30, 30);
-//draws a line on mouse click
-  if(mouseIsPressed){
-    line(pmouseX,pmouseY,mouseX,mouseY)
+  */
+    //draws a line on mouse click
+    if (mouseIsPressed) {
+        line(pmouseX, pmouseY, mouseX, mouseY)
     }
 
-  if (mouseButton == RIGHT){
-     background(255);
-  }
+    if (mouseButton == RIGHT) {
+        background(252);
+    }
 }

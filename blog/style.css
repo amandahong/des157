@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    color: #2F2F2F;
+    color: #3D3D3D;
     margin: 100px 0px 50px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -51,8 +51,22 @@ div {
     margin: 20px;
     padding: 10px;
     float: left;
-    background-color: #D2F898;
+    background-color: #FFD23F;
     color: #2F2F2F;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px #D8D8D8;
+}
+
+div.comp {
+  width: 500px;
+  height: 600px;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  background-color: #FFD23F;
+  color: #2F2F2F;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px #D8D8D8;
 }
 
 img {

@@ -41,6 +41,12 @@ h3 {
     font-size: 12px;
 }
 
+ol {
+  margin: 15px 0px 0px 35px;
+  line-height: 22px;
+  font-size: 12px;
+}
+
 article {
     float: left;
 }

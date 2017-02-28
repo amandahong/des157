@@ -53,9 +53,10 @@ h2#click {
   text-align: right;
 }
 
+
 div.left {
   width: 250px;
-  height: 240px;
+  height: 300px;
   margin-top: 10px;
   float: left;
   color: #FFD23F;

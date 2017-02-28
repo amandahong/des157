@@ -37,14 +37,36 @@ h2 {
 }
 
 h3 {
-    margin-left: 20px;
+    color: white;
+    margin: 20px 0px 0px 20px;
+    font-size: 14px;
+}
+
+ol {
+    margin: 15px 0px 0px 35px;
+    line-height: 22px;
     font-size: 12px;
 }
 
 ol {
-  margin: 15px 0px 0px 35px;
-  line-height: 22px;
-  font-size: 12px;
+    list-style: none;
+    counter-reset: li
+}
+
+li::before {
+    content: counter(li);
+    color: white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
+}
+
+li {
+    counter-increment: li;
 }
 
 article {
@@ -64,15 +86,15 @@ div {
 }
 
 div.comp {
-  width: 500px;
-  height: 600px;
-  margin: 20px;
-  padding: 10px;
-  float: left;
-  background-color: #FFD23F;
-  color: #2F2F2F;
-  border-radius: 10px;
-  box-shadow: 10px 10px 40px #D8D8D8;
+    width: 500px;
+    height: 600px;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    background-color: #FFD23F;
+    color: #2F2F2F;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px #D8D8D8;
 }
 
 img {
@@ -87,8 +109,8 @@ p {
 
 footer {
     clear: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 100px 0px 30px 20px;
+    font-size: 12px;
 }
 
 a:link {

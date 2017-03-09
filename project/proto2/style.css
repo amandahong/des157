@@ -39,7 +39,8 @@ h2 {
     margin: 20px 0px 20px 0px;
 }
 
-#plate {
+#plate-full {
+    position: absolute;
     margin: 0px 0px 20px 0px;
     text-align: center;
 }

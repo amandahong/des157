@@ -3,6 +3,18 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+
+var plate=document.getElementById('plate');
+
+    plate.addEventListener('mouseover', function() {
+      plate.src='images/plate_full.png';
+    });
+
+    plate.addEventListener('mouseout', function() {
+      plate.src='images/plate.png';
+    });
+
+
     //Function handleDragStart(), Its purpose is to store the id of the draggable element.
     		function handleDragStart(e) {
     			e.dataTransfer.setData("text", this.id); //note: using "this" is the same as using: e.target.

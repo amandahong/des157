@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Amanda Hong Prototype 1</title>
-    <link href="style.css" rel="stylesheet" />
-
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src='script.js' type="text/javascript"></script>
 </head>
 
 <body>
     <header>
+              <img id="logo" src="images/logo.png" width="200" alt="logo">
         <h1>Let's make noodles!</h1>
     </header>
     <main>
-        <h2>Drag and drop the ingredients into the pot.</h2>
+        <h2>Click on the ingredients to learn more! <br/> Then drag and drop the ingredients into the pot.</h2>
 
-    <!--  First Drop Target -->
         <div data-drop-target="true">
             <div id="one" draggable="true" class="box navy"><img src="images/food1.png" width="100" alt="food1"></div>
             <div id="two" draggable="true" class="box red"><img src="images/food2.png" width="100" alt="food1"></div>
@@ -24,8 +24,11 @@
             <div id="four" draggable="true" class="box orange"><img src="images/food4.png" width="100" alt="food1"></div>
         </div>
 
-    <!--  Second Drop Target-->
+
         <div data-drop-target="true"><img id="pan" src="images/pan.png" width="250" alt="pan"></div>
+
+    <a class="button" href="#">Finished cooking!</a>
+
 
         <section>
           <aside id="oneInfo">
@@ -44,13 +47,10 @@
 
 
 
-        <section id="finish">
-            <a class="button" href="#">Finished cooking!</a>
-        </section>
     </main>
 
     <footer>
-        <a href="index2.html">back to recipes</a> |
+        <a href="index2.html">back</a> |
         <a href="https://validator.w3.org/check?uri=referer" target="_blank">valid html 5</a> |
         <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">valid css</a>
     </footer>

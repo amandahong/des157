@@ -2,7 +2,6 @@
 
 /* CSS Document */
 
-
 /* start all css with a reset */
 
 * {
@@ -50,6 +49,19 @@ nav {
     margin: 10px 0px 20px 160px;
 }
 
+#plate {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    background-image: url('images/plate.png');
+}
+
+#plate:hover {
+    transition: 1s;
+    background-image: url('images/plate_full.png');
+}
+
 #broth, #noodle, #sauce, #veggie {
     float: left;
     margin: 10px;
@@ -63,17 +75,6 @@ nav {
     display: block;
 }
 
-#plate {
-    margin: auto;
-    width: 250px;
-    height: 250px;
-    background-image: url('images/plate.png');
-}
-
-#plate:hover {
-    transition: 1s;
-    background-image: url('images/plate_full.png');
-}
 
 ul {
     list-style: none;

@@ -34,7 +34,7 @@ section {
 
 h1 {
     color: #3D3D3D;
-    margin: 20px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
 }
@@ -59,14 +59,14 @@ h2#project-hidden {
 
 div.left {
     width: 200px;
-    height: 280px;
+    height: 300px;
     margin-top: 10px;
     float: left;
     color: #FFD23F;
 }
 
 nav {
-    margin: 15px 0px 0px 15px;
+    margin: 10px 0px 0px 15px;
     line-height: 22px;
     font-size: 12px;
 }
@@ -79,7 +79,7 @@ p {
 }
 
 hr {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer {

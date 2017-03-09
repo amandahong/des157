@@ -39,10 +39,16 @@ h2 {
     margin: 20px 0px 20px 0px;
 }
 
-#plate-full {
-    position: absolute;
-    margin: 0px 0px 20px 0px;
-    text-align: center;
+#plate {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    background-image: url('images/plate.png');
+}
+
+#plate:hover {
+    transition: 1s;
+    background-image: url('images/plate_full.png');
 }
 
 ul {
@@ -95,13 +101,14 @@ section {}
 }
 
 aside {
+    position: fixed;
     display: none;
-    background-color: #DBDBDB;
+    background-color: white;
+    color: #C12424;
     width: 100px;
     height: 100px;
     border: none;
     border-radius: 10px;
-    color: white;
     margin: 10px 10px 10px 50px;
     padding: 15px;
 }
@@ -116,7 +123,7 @@ aside #close {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;

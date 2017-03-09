@@ -69,8 +69,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     		}
 
 
-
-
     var one = document.getElementById('one');
     var two = document.getElementById('two');
 

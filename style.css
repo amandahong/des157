@@ -89,7 +89,6 @@ footer {
 }
 
 a:link {
-    text-decoration: none;
     color: black;
 }
 
@@ -98,7 +97,7 @@ a:visited {
 }
 
 a:hover {
-    color: #FFD23F;
+    color: #f1f1f2;
 }
 
 a:active {

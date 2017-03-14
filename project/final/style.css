@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    background-image: url('images/wood.png');
+    font-family: 'Montserrat', sans-serif;
+    color: #0D1321;
+}
+
+header {
+    margin: 40px 0px 0px 0px;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #C12424;
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px 0px 20px 0px;
+}
+
+h3 {
+    color: #FF7F11;
+    font-size: 15px;
+    margin: 20px 0px 20px 0px;
+}
+
+nav {
+    height: 150px;
+    margin: 10px 0px 20px 160px;
+}
+
+#plate {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    background-image: url('images/plate.png');
+}
+
+#plate:hover {
+    transition: 1s;
+    background-image: url('images/plate_full.png');
+}
+
+#broth, #noodle, #sauce, #veggie {
+    float: left;
+    margin: 10px;
+}
+
+#broth-info, #noodle-info, #sauce-info, #veggie-info {
+    display: none;
+}
+
+#broth:hover #broth-info, #noodle:hover #noodle-info, #sauce:hover #sauce-info, #veggie:hover #veggie-info {
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.button {
+    background-color: white;
+    color: #C12424;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 10px 10px 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    box-shadow: 5px 5px 0px #EBEBEC;
+}
+
+#pan {
+    position: absolute;
+    z-index: -1;
+}
+
+[data-drop-target] {
+    height: 260px;
+    width: 260px;
+    margin: 10px;
+    float: left;
+    z-index: 1;
+}
+
+.drag-enter {
+    border: 2px #fff;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+}
+
+.box:nth-child(6) {
+    clear: both;
+}
+
+aside {
+    position: fixed;
+    display: none;
+    background-color: white;
+    color: #C12424;
+    width: 200px;
+    height: 320px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 10px 10px 600px;
+    padding: 15px;
+}
+
+p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+aside #close {
+    cursor: pointer;
+}
+
+#pan-full {
+
+}
+
+#finish {
+    position: absolute;
+    margin-top: 400px;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #EAEAEA;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: #C12424;
+}
+
+a:visited {
+    color: #C12424;
+}
+
+a:hover {
+    color: #FF7F11;
+}
+
+a:active {
+    color: #EBEBEC;
+}

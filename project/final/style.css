@@ -2,6 +2,7 @@
 
 /* CSS Document */
 
+
 /* start all css with a reset */
 
 * {
@@ -15,7 +16,11 @@ body {
     text-align: center;
     background-image: url('images/wood.png');
     font-family: 'Montserrat', sans-serif;
-    color: #0D1321;
+    color: #4D4C4D;
+}
+
+main {
+    margin-bottom: 80px;
 }
 
 header {
@@ -36,6 +41,7 @@ h2 {
     font-size: 20px;
     font-style: italic;
     margin: 20px 0px 20px 0px;
+    text-shadow: 2px 2px 50px #685438;
 }
 
 h3 {
@@ -49,9 +55,14 @@ nav {
     margin: 10px 0px 20px 160px;
 }
 
+p {
+    margin: 20px;
+}
+
 #plate {
     margin: auto;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     width: 250px;
     height: 250px;
     background-image: url('images/plate.png');
@@ -68,13 +79,13 @@ nav {
 }
 
 #broth-info, #noodle-info, #sauce-info, #veggie-info {
+  font-size: 14px;
     display: none;
 }
 
 #broth:hover #broth-info, #noodle:hover #noodle-info, #sauce:hover #sauce-info, #veggie:hover #veggie-info {
     display: block;
 }
-
 
 ul {
     list-style: none;
@@ -95,19 +106,8 @@ ul {
     box-shadow: 5px 5px 0px #EBEBEC;
 }
 
-#no {
-  background-color: white;
-  color: #C12424;
-  width: 200px;
-  border: none;
-  border-radius: 10px;
-  margin: 20px 10px 20px 10px;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  box-shadow: 5px 5px 0px #EBEBEC;
+#no, #recipe {
+    font-size: 15px;
 }
 
 #pan {
@@ -144,7 +144,7 @@ aside {
     background-color: white;
     color: #C12424;
     width: 200px;
-    height: 320px;
+    height: 400px;
     border: none;
     border-radius: 10px;
     margin: 10px 10px 10px 600px;
@@ -157,13 +157,15 @@ p {
     font-size: 12px;
 }
 
+.extra {
+    color: #A7A9AC;
+}
+
 aside #close {
     cursor: pointer;
 }
 
-#pan-full {
-
-}
+#pan-full {}
 
 #back {
     float: right;
@@ -172,6 +174,16 @@ aside #close {
 #finish {
     position: absolute;
     margin-top: 400px;
+}
+
+.last {
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4D4C4D;
+
 }
 
 footer {

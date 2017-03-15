@@ -83,13 +83,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //loop to assign info boxes to pictures and show on click
     for (a = 0; a < items.length; a++) {
         items[a].addEventListener('click', function() {
+            var elems = document.getElementsByTagName('aside');            
+            for (i = 0; i < elems.length; i++) {                
+                elems[i].style.display = 'none';            
+            }
             var id = this.getAttribute('id') + 'Info';
             // grab ID of the element that was clicked on, append "Info" to match the ID of the popup
             var elem = document.getElementById(id);
             // get the popup with the corresponding ID
             elem.style.display = "block";
         })
-
     }
 
 
@@ -101,11 +104,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         })
     }
 
-      back.addEventListener('click', function() {
-        var id = this.getAttribute('id') + 'Info';
-        // grab ID of the element that was clicked on, append "Info" to match the ID of the popup
-        var elem = document.getElementById(id);
-        // get the popup with the corresponding ID
-        elem.style.display = "block";
-        })
 });

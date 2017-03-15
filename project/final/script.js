@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
-//Click ingredients for info
+    //Click ingredients for info
     var one = document.getElementById('one');
     var two = document.getElementById('two');
     var three = document.getElementById('three');
@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var close = document.getElementsByClassName('close');
     var closeAll = document.getElementById('closeAll');
+    var back = document.getElementById('back');
 
     var items = [one, two, three, four];
 
@@ -88,7 +89,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
             // get the popup with the corresponding ID
             elem.style.display = "block";
         })
+
     }
+
 
     //loop to assign the close function to the X
     for (i = 0; i < close.length; i++) {
@@ -98,4 +101,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         })
     }
 
+      back.addEventListener('click', function() {
+        var id = this.getAttribute('id') + 'Info';
+        // grab ID of the element that was clicked on, append "Info" to match the ID of the popup
+        var elem = document.getElementById(id);
+        // get the popup with the corresponding ID
+        elem.style.display = "block";
+        })
 });

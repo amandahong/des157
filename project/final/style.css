@@ -31,28 +31,57 @@ header {
     margin-bottom: 20px;
 }
 
+.board {
+    background-image: url(images/board.png);
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-left: 20px;
+}
+
 h1 {
     color: #C12424;
     font-size: 30px;
+    text-align: left;
+    padding-left: 200px;
+    padding-top: 30px;
 }
 
 h2 {
     color: white;
     font-size: 20px;
     font-style: italic;
-    margin: 20px 0px 20px 0px;
-    text-shadow: 2px 2px 50px #685438;
+    text-align: left;
+    padding-left: 200px;
+    padding-top: 10px;
+}
+
+.left {
+    color: white;
+    width: 200px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    margin-right: 50px;
+    float: left;
 }
 
 h3 {
     color: #FF7F11;
     font-size: 15px;
-    margin: 30px 0px 20px 0px;
+    text-align: left;
+    padding-left: 200px;
+    padding-top: 15px;
+    ;
+}
+section {
+width: 900px;
+height: 100px;
 }
 
 nav {
     height: 150px;
-    margin: 10px 0px 20px 160px;
+    margin: 0px 0px 20px 160px;
 }
 
 p {
@@ -79,7 +108,7 @@ p {
 }
 
 #broth-info, #noodle-info, #sauce-info, #veggie-info {
-  font-size: 14px;
+    font-size: 14px;
     display: none;
 }
 
@@ -97,7 +126,7 @@ ul {
     width: 200px;
     border: none;
     border-radius: 10px;
-    margin: 20px 10px 20px 10px;
+    margin: 10px 10px 10px 10px;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -110,8 +139,13 @@ ul {
     font-size: 15px;
 }
 
+#no {
+    margin-top: 30px;
+}
+
 #pan {
     position: absolute;
+
     z-index: -1;
 }
 
@@ -139,16 +173,18 @@ ul {
 }
 
 aside {
-    position: fixed;
+    position: absolute;
+    text-align: left;
     display: none;
     background-color: white;
     color: #C12424;
     width: 200px;
-    height: 400px;
+    height: 370px;
     border: none;
     border-radius: 10px;
     margin: 10px 10px 10px 600px;
     padding: 15px;
+    box-shadow: 5px 5px 0px #EBEBEC;
 }
 
 p {
@@ -165,7 +201,9 @@ aside #close {
     cursor: pointer;
 }
 
-#pan-full {}
+#pan-full {
+    margin-top: -40px;
+}
 
 #back {
     float: right;
@@ -177,13 +215,13 @@ aside #close {
 }
 
 .last {
-  width: 500px;
-  margin: auto;
-  padding: 10px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4D4C4D;
-
+    width: 500px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4C4D;
 }
 
 footer {
